@@ -3,22 +3,23 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gestiune Chiriași</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="login">
-    <h2>Autentificare Admin</h2>
-    <input type="password" id="password" placeholder="Parolă" />
-    <button onclick="login()">Intră</button>
+  <div id="login" class="container mt-5">
+    <h2 class="mb-4">Autentificare Admin</h2>
+    <input type="password" id="password" class="form-control mb-3" placeholder="Parolă" />
+    <button onclick="login()" class="btn btn-primary w-100">Intră</button>
   </div>
 
-  <div id="app" style="display:none;">
-    <h1>Gestiune Chiriași</h1>
-    <input type="file" id="excelInput" />
-    <button onclick="exportToExcel()">Exportă Excel</button>
-    <table id="rentTable"></table>
+  <div id="app" class="container mt-5" style="display:none;">
+    <h1 class="mb-4">Gestiune Chiriași</h1>
+    <input type="file" id="excelInput" class="form-control mb-3" />
+    <button onclick="exportToExcel()" class="btn btn-success mb-3">Exportă Excel</button>
+    <table id="rentTable" class="table table-striped table-bordered"></table>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
