@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestiune Chiriași</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login">
+    <h2>Autentificare Admin</h2>
+    <input type="password" id="password" placeholder="Parolă" />
+    <button onclick="login()">Intră</button>
+  </div>
+
+  <div id="app" style="display:none;">
+    <h1>Gestiune Chiriași</h1>
+    <input type="file" id="excelInput" />
+    <button onclick="exportToExcel()">Exportă Excel</button>
+    <table id="rentTable"></table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
